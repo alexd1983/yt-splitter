@@ -40,7 +40,7 @@ void main(List<String> arguments) async {
   if (!File(mp3FilePath).existsSync()) {
     print('Downloading and converting audio file from YouTube...');
     final process = await Process.start(
-      'youtube-dl',
+      'yt-dlp',
       [
         //'--add-metadata',
         //'--embed-thumbnail',
